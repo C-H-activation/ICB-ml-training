@@ -7,7 +7,7 @@ New substrates have been docked into the template using the [kallisto](https://g
 All structures are optimzed at the GFN2-xtb/ALPB(THF) level of theory with tight thresholds.
 Reference relative energie have been extracted from our [regioselectivity database](https://github.com/f3rmion/db_regioselectivity), where we adopted the naming of the compounds accordingly that we composed from works in the literature -- all citations are listed in the DB repository. 
 
-Structures c1 to c15 have been created experimentally and are therefore not part of the regioselectivity database.
+Ratios for c1 to c15 have been created experimentally and are therefore not part of the regioselectivity database.
 
 ## Training data
 All training data is given in ``tsa.txt`` where we use the following columns:
