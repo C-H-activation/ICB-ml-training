@@ -1,0 +1,22 @@
+$fix
+ atoms: 1-86
+$constrain
+ distance: 86, 87, auto
+ distance: 86, 88, auto
+ distance: 87, 86, auto
+ distance: 87, 89, auto
+ distance: 87, 90, auto
+ distance: 88, 86, auto
+ distance: 88, 91, auto
+ distance: 88, 92, auto
+ distance: 89, 87, auto
+ distance: 89, 91, auto
+ distance: 90, 87, auto
+ distance: 91, 88, auto
+ distance: 91, 89, auto
+ distance: 91, 93, auto
+ distance: 92, 88, auto
+ distance: 92, 94, auto
+ distance: 93, 91, auto
+ distance: 94, 92, auto
+$end
