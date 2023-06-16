@@ -72,3 +72,9 @@ The trainin database can be created using the `create-csv.py` script
 
 This script creates a `db.csv` file with all reference ECFP4 fingerprints.
 
+## ML model performance
+We share the statistical evaluations of all different machine-learning models in `statistics_ml_models.out`.
+In here, we list mean absolute errors in kJ/mol, coefficients of determination (R2), and root-mean squared errors (RMSE) in kJ/mol for all models.
+NOte that we automated the parameter tuning and extracted the model with lowest deviations in each case.
+We list all different parameter settings below the statistical evaluations for clarity.
+
