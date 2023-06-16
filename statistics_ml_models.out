@@ -3,37 +3,37 @@ Python version: 3.8.12 | packaged by conda-forge | (default, Sep 29 2021, 19:50:
 [GCC 9.4.0]
 
 Mean absolue error in kJ/mol
-Mean                                6.38     -0.06      0.06
-Median                              6.47     -0.27      0.27
-LR                            616854922285.68-557282349416.45253352208375.58
-KRR                                 4.82     -0.20      0.20
-BR                                  4.10     -0.14      0.13
-KNN                                 2.66     -0.23      0.23
-RF                                  3.67     -0.11      0.11
-PLS PF                              3.13     -0.15      0.15
-GPR M 1.5 no scaler                 6.38     -0.06      0.07
+Mean                                6.38
+Median                              6.47
+LR                            616854922285.68
+KRR                                 4.82
+BR                                  4.10
+KNN                                 2.66
+RF                                  3.67
+PLS PF                              3.13
+GPR M 1.5 no scaler                 6.38
 
 Coefficient of determination (R2)
-Mean                               -0.01     -0.00      0.00
-Median                             -0.90     -0.07      0.08
-LR                            -1727447654187915756437504.00-789396234389165657030656.001715102891192848954163200.00
-KRR                                -0.00      0.02      0.05
-BR                                  0.37     -0.04      0.04
-KNN                                 0.25     -0.05      0.06
-RF                                  0.49     -0.03      0.04
-PLS PF                              0.49     -0.04      0.04
-GPR M 1.5 no scaler                -0.01     -0.00      0.00
+Mean                               -0.01
+Median                             -0.90
+LR                            -1727447654187915756437504.00
+KRR                                -0.00
+BR                                  0.37
+KNN                                 0.25
+RF                                  0.49
+PLS PF                              0.49
+GPR M 1.5 no scaler                -0.01
 
 Root-mean squared error (RMSE) in kJ/mol
-Mean                                6.54     -0.05      0.05
-Median                              8.97     -0.21      0.20
-LR                            6875600958205.84-6119066869191.403426955671541.62
-KRR                                 6.51     -0.18      0.03
-BR                                  5.16     -0.16      0.16
-KNN                                 5.64     -0.23      0.17
-RF                                  4.66     -0.16      0.16
-PLS PF                              4.65     -0.16      0.16
-GPR M 1.5 no scaler                 6.54     -0.05      0.06
+Mean                                6.54
+Median                              8.97
+LR                            6875600958205.84
+KRR                                 6.51
+BR                                  5.16
+KNN                                 5.64
+RF                                  4.66
+PLS PF                              4.65
+GPR M 1.5 no scaler                 6.54
 
 Variations of each model from which the minimum deviation has been chosen in each case:
 
