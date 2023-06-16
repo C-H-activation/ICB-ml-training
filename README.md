@@ -61,4 +61,14 @@ Finally, we train the model using the `pls-pf.py` script.
 This script will create submolecules, aggregate all training data (X=ECFP4 fingerprints of the submolecule -> y=reference penalties), and create a PLSRegressor (`pls.mod`).
 The final model can then be used to perform predictions for any X. The logic how we extract a submolecule is given in the [Compound](https://github.com/C-H-activation/ICB-ml-training/blob/main/compound/compound.py#L100) class.
 
+## Create training database
+We use a training database to check whether a system of interest is similar to the training set. For this purpose we store ECFP4 fingerprints of all the references and perform similarity checks on-the-fly.
+The trainin database can be created using the `create-csv.py` script
+
+```bash
+> python create_csv.py
+... (database setup details)
+```
+
+This script creates a `db.csv` file with all reference ECFP4 fingerprints.
 
