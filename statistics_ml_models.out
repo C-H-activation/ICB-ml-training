@@ -1,20 +1,8 @@
 Printing version info for help reporting bugs
 Python version: 3.8.12 | packaged by conda-forge | (default, Sep 29 2021, 19:50:30) 
 [GCC 9.4.0]
-   0    1    2    3    4    5    6    ...  249  250  251  252  253  254  255
-0    1    0    0    0    0    0    0  ...    0    1    0    0    0    0    0
-1    1    0    0    0    0    0    0  ...    0    1    0    0    0    0    1
-2    1    0    0    0    0    0    0  ...    0    1    0    0    1    0    0
-3    1    0    0    0    0    0    0  ...    0    1    0    0    0    0    0
-4    1    0    0    0    0    0    0  ...    0    1    0    0    0    0    0
-5    1    0    1    0    0    0    0  ...    0    1    0    0    0    0    1
-6    1    0    0    0    1    0    0  ...    0    1    0    0    1    0    1
-7    1    0    1    0    0    0    0  ...    0    1    0    0    0    0    0
-8    1    0    0    0    0    0    0  ...    0    1    0    0    0    0    0
-9    1    0    0    0    1    0    0  ...    0    1    0    0    0    0    0
 
-[10 rows x 256 columns]
-MAE
+Mean absolue error in kJ/mol
 Mean                                6.38     -0.06      0.06
 Median                              6.47     -0.27      0.27
 LR                            616854922285.68-557282349416.45253352208375.58
@@ -24,7 +12,8 @@ KNN                                 2.66     -0.23      0.23
 RF                                  3.67     -0.11      0.11
 PLS PF                              3.13     -0.15      0.15
 GPR M 1.5 no scaler                 6.38     -0.06      0.07
-R2
+
+Coefficient of determination (R2)
 Mean                               -0.01     -0.00      0.00
 Median                             -0.90     -0.07      0.08
 LR                            -1727447654187915756437504.00-789396234389165657030656.001715102891192848954163200.00
@@ -34,7 +23,8 @@ KNN                                 0.25     -0.05      0.06
 RF                                  0.49     -0.03      0.04
 PLS PF                              0.49     -0.04      0.04
 GPR M 1.5 no scaler                -0.01     -0.00      0.00
-RMSE
+
+Root-mean squared error (RMSE) in kJ/mol
 Mean                                6.54     -0.05      0.05
 Median                              8.97     -0.21      0.20
 LR                            6875600958205.84-6119066869191.403426955671541.62
@@ -44,36 +34,32 @@ KNN                                 5.64     -0.23      0.17
 RF                                  4.66     -0.16      0.16
 PLS PF                              4.65     -0.16      0.16
 GPR M 1.5 no scaler                 6.54     -0.05      0.06
-Mean                          {'r2': 0, 'mae': 0, 'rmse': 0}{'r2': DummyRegressor(), 'mae': DummyRegressor(), 'rmse': DummyRegressor()}
-Median                        {'r2': 0, 'mae': 0, 'rmse': 0}{'r2': DummyRegressor(strategy='median'), 'mae': DummyRegressor(strategy='median'), 'rmse': DummyRegressor(strategy='median')}
-LR                            {'r2': 0, 'mae': 0, 'rmse': 0}{'r2': LinearRegression(), 'mae': LinearRegression(), 'rmse': LinearRegression()}
-KRR                           {'r2': 5, 'mae': 0, 'rmse': 5}{'r2': KernelRidge(alpha=0.001, gamma=5e-07, kernel='rbf'), 'mae': KernelRidge(alpha=1e-08, gamma=3.125e-08, kernel='rbf'), 'rmse': KernelRidge(alpha=0.001, gamma=5e-07, kernel='rbf')}
-BR                            {'r2': 0, 'mae': 0, 'rmse': 0}{'r2': BayesianRidge(), 'mae': BayesianRidge(), 'rmse': BayesianRidge()}
-KNN                           {'r2': 1, 'mae': 0, 'rmse': 1}{'r2': KNeighborsRegressor(n_neighbors=4), 'mae': KNeighborsRegressor(n_neighbors=1), 'rmse': KNeighborsRegressor(n_neighbors=4)}
-RF                            {'r2': 1, 'mae': 0, 'rmse': 1}{'r2': RandomForestRegressor(max_depth=15, random_state=1), 'mae': RandomForestRegressor(max_depth=15, n_estimators=50, random_state=1), 'rmse': RandomForestRegressor(max_depth=15, random_state=1)}
-PLS PF                        {'r2': 8, 'mae': 13, 'rmse': 8}{'r2': Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
-                ('plsregression', PLSRegression(n_components=9))]), 'mae': Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
-                ('plsregression', PLSRegression(n_components=14))]), 'rmse': Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
-                ('plsregression', PLSRegression(n_components=9))])}
-GPR M 1.5 no scaler           {'r2': 0, 'mae': 0, 'rmse': 0}{'r2': GaussianProcessRegressor(kernel=1**2 * Matern(length_scale=1, nu=1.5) + WhiteKernel(noise_level=1),
-                         random_state=1), 'mae': GaussianProcessRegressor(kernel=1**2 * Matern(length_scale=1, nu=1.5) + WhiteKernel(noise_level=1),
-                         random_state=1), 'rmse': GaussianProcessRegressor(kernel=1**2 * Matern(length_scale=1, nu=1.5) + WhiteKernel(noise_level=1),
-                         random_state=1)}
+
+Variations of each model from which the minimum deviation has been chosen in each case:
+
 Start run for:  LinearRegression()
+
 Start run for:  KernelRidge(alpha=0.001, gamma=3.125e-08, kernel='rbf')
 Start run for:  KernelRidge(alpha=0.1, gamma=3.125e-08, kernel='rbf')
+
 Start run for:  BayesianRidge()
+
 Start run for:  KNeighborsRegressor(n_neighbors=10)
+
 Start run for:  RandomForestRegressor(max_depth=15, random_state=1)
+
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=4))])
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=8))])
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=12))])
+
 Start run for:  KernelRidge(alpha=1e-08, gamma=3.125e-08, kernel='rbf')
+
 Start run for:  KNeighborsRegressor(n_neighbors=7)
 Start run for:  KNeighborsRegressor(n_neighbors=13)
+
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=1))])
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
@@ -82,12 +68,16 @@ Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=9))])
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=13))])
+
 Start run for:  DummyRegressor()
+
 Start run for:  KernelRidge(alpha=1e-08, gamma=1.25e-07, kernel='rbf')
 Start run for:  KernelRidge(alpha=0.001, gamma=5e-07, kernel='rbf')
 Start run for:  KernelRidge(alpha=0.1, gamma=5e-07, kernel='rbf')
+
 Start run for:  KNeighborsRegressor(n_neighbors=4)
 Start run for:  KNeighborsRegressor(n_neighbors=16)
+
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression())])
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
@@ -96,17 +86,23 @@ Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=10))])
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=14))])
+
 Start run for:  DummyRegressor(strategy='median')
+
 Start run for:  KernelRidge(alpha=1e-08, gamma=5e-07, kernel='rbf')
 Start run for:  KernelRidge(alpha=0.001, gamma=1.25e-07, kernel='rbf')
 Start run for:  KernelRidge(alpha=0.1, gamma=1.25e-07, kernel='rbf')
+
 Start run for:  KNeighborsRegressor(n_neighbors=1)
+
 Start run for:  RandomForestRegressor(max_depth=15, n_estimators=50, random_state=1)
+
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=3))])
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=7))])
 Start run for:  Pipeline(steps=[('polynomialfeatures', PolynomialFeatures()),
                 ('plsregression', PLSRegression(n_components=11))])
+
 Start run for:  GaussianProcessRegressor(kernel=1**2 * Matern(length_scale=1, nu=1.5) + WhiteKernel(noise_level=1),
                          random_state=1)
